@@ -1,14 +1,9 @@
 language: node_js
+
 node_js:
-- '6'
+  - "6"
+
 before_script:
-- npm install -g gulp
+  - npm install -g gulp
+
 script: gulp
-deploy:
-  provider: heroku
-  api_key:
-    secure: HEgvAJXu/du8W6RfYBY1l3kEqGS9hpy3xilw79Ob36zH8ZUIPuMFMNEIiTASx/P0k/LgH+XS5cquF/0Ml7aBKed4hS13GWnb9nSFWv/+bludyD4mCQXPlXlmAalt/LY3E9q14DscnPOBLFre3pYmaS8nB+JlYj6leE0RjHkQ1KLD3+MHSU+TGfq+WNA7qTt1eNKGQ8RKvFHS8OgymQYOJ6pSOnFFrlMfg7kJ5A42pJRt3OHtkwkQEOUWNJWMvzeaJeJleSNTYjJjDHDSc4b1Pt52jlW7aH9Lk/iMUzjhcOs9UeHp2KtkUVBWJDFVT47yymUqEuL01EKJC3BuvJNZd78o66w+Qbw9qmbn5LBQRpis97adL37fxRz3cmAHkfKsOUjOB4zt/Puc0CeCie6TVoRgy0peULEXbLBvek3NffU2loaJOvZ/UZJoy155B6ewEmXdEh/N36MCSrzdDYsBofCR8DZTfVEYy+zBcVja8Ud4BjrKhIZ+itLgkrOhWPuUjosiTfaH6tw91EMua8osAAeEG54u/URrxyemgqDa8TNSp33dDI/BVJW7ImWYe5lbIzL8HWhWUZ0JdMwt7SD8rDRGDxZBa9/Fl4WJ147+ROfhDHK54y4voUN1VFa6c9RwCJmDpQaqxHFeuvfzbKA8oJi5+VJXlQsZxU2Nl7b+Mm4=
-  app: stickee
-  on:
-    repo: zhl108/stickee
-    branch: dev
