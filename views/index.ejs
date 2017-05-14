@@ -7,5 +7,11 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <p>Plead enter your personal info below</p>
+    <form action="/register" method="post">
+        <input type="text" placeholder="username" name="username">
+        <input type="text" placeholder="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
